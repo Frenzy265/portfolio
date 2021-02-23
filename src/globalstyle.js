@@ -25,10 +25,16 @@ html {
     height: 100%;
 }
 
+h1 {
+    text-transform: lowercase;
+    font-family: 'Domine', serif;
+}
+
 body {
     margin: 0;
     width: 100%;
     background: var(--primary-color);
+    font-family: 'Open Sans', sans-serif;
 }
 
 input, button, li {
