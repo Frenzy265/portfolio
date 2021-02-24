@@ -12,18 +12,24 @@ const List = styled.ul`
 `;
 
 export const SkillsList = () => {
+  const skills = [
+    "HTML",
+    "CSS",
+    "React",
+    "Styled-Components",
+    "Git Workflow",
+    "Node.js",
+    "Express.js",
+    "Mongo DB",
+    "Scrum",
+    "Projektmanagment",
+  ];
+
   return (
     <List>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>React</li>
-      <li>Styled Components</li>
-      <li>Mongo DB</li>
-      <li>Express.js</li>
-      <li>Node.js</li>
-      <li>Git Workflow</li>
-      <li>Scrum</li>
-      <li>Projektmanagement</li>
+      {skills?.map((skill) => (
+        <li key={skill}>{skill}</li>
+      ))}
     </List>
   );
 };
