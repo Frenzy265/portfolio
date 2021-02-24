@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="44" viewBox="0 0 72 44">
+  <g id="Gruppe_5" data-name="Gruppe 5" transform="translate(-1793 -53)">
+    <g id="Rechteck_8" data-name="Rechteck 8" transform="translate(1793 53)" stroke="#707070" stroke-width="1">
+      <rect width="72" height="10" rx="5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="71" height="9" rx="4.5" fill="none"/>
+    </g>
+    <g id="Rechteck_9" data-name="Rechteck 9" transform="translate(1793 70)" stroke="#707070" stroke-width="1">
+      <rect width="72" height="10" rx="5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="71" height="9" rx="4.5" fill="none"/>
+    </g>
+    <g id="Rechteck_10" data-name="Rechteck 10" transform="translate(1793 87)" stroke="#707070" stroke-width="1">
+      <rect width="72" height="10" rx="5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="71" height="9" rx="4.5" fill="none"/>
+    </g>
+  </g>
+</svg>
