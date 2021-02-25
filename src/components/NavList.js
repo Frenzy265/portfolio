@@ -1,6 +1,7 @@
 import styled from "styled-components/macro";
+import PropTypes from "prop-types";
 
-const NavItem = styled.li`
+const Button = styled.button`
   width: 100px;
   height: 25px;
   background: var(--secondary-color);
@@ -8,10 +9,11 @@ const NavItem = styled.li`
   font-size: small;
   text-align: center;
   line-height: 25px;
-  list-style: none;
   border-radius: 25px;
   margin-bottom: 5px;
   margin-right: 10px;
+  border: none;
+  position: absolute;
 
   a {
     text-decoration: none;
@@ -23,20 +25,43 @@ const NavItem = styled.li`
   }
 `;
 
-const sections = ["Contact", "About", "Background", "Projects", "Skills"];
+const UnorderedList = styled.ul`
+  opacity: ${(props) => (props.open ? "1" : "0")};
+  visibility: ${(props) => (props.open ? "visible" : "hidden")};
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 30px;
+`;
 
-const NavList = () => {
+const NavItem = styled(Button)`
+  list-style: none;
+  position: relative;
+`;
+
+const sections = ["About", "Background", "Projects", "Skills"];
+
+const Navigation = ({ open }) => {
   return (
     <>
-      <ul>
-        {sections?.map((section) => (
-          <NavItem key={section}>
-            <a href="#">{section}</a>
-          </NavItem>
-        ))}
-      </ul>
+      <nav>
+        <Button>
+          <a href="#">Contact</a>
+        </Button>
+        <UnorderedList open={open}>
+          {sections?.map((section) => (
+            <NavItem key={section}>
+              <a href="#">{section}</a>
+            </NavItem>
+          ))}
+        </UnorderedList>
+      </nav>
     </>
   );
 };
 
-export default NavList;
+export default Navigation;
+
+Navigation.propTypes = {
+  open: PropTypes.bool,
+};
