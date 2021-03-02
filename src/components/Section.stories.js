@@ -2,6 +2,8 @@ import React from "react";
 import Circle from "./Circle";
 import { SkillsList } from "./List";
 import Section from "./Section";
+import Emoji from "../assets/emoji.png";
+import { TextBox } from "./Textbox";
 
 export default {
   title: "Example/Section",
@@ -9,7 +11,7 @@ export default {
   parameters: { layout: "centered" },
 };
 
-export const section = () => (
+export const sectionSkills = () => (
   <Section>
     <Circle>
       <h1>Skills</h1>
@@ -21,5 +23,14 @@ export const section = () => (
       </svg>
     </Circle>
     <SkillsList />
+  </Section>
+);
+
+export const sectionProfile = () => (
+  <Section>
+    <Circle>
+      <img src={Emoji} alt="Profile" />
+    </Circle>
+    <TextBox />
   </Section>
 );
