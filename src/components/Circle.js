@@ -19,6 +19,10 @@ const Circle = styled.div`
   svg {
     width: 70px;
   }
+
+  img {
+    width: 500px;
+  }
 `;
 
 export default Circle;
