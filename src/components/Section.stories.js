@@ -1,11 +1,11 @@
 import React from "react";
 import Circle from "./Circle";
-import { SkillsList } from "./List";
+import { SkillsList } from "./SkillsList";
 import Section from "./Section";
 import Emoji from "../assets/emoji.png";
 import { TextBox } from "./Textbox";
 import { Cards } from "./Cards";
-import { Caption } from "./Caption";
+import Caption from "./Caption";
 
 export default {
   title: "Example/Section",
@@ -39,7 +39,11 @@ export const sectionProfile = () => (
 
 export const sectionBackground = () => (
   <Section>
-    <Caption />
+    <Caption>
+      Back
+      <br />
+      ground
+    </Caption>
     <Cards />
   </Section>
 );
