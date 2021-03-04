@@ -1,5 +1,5 @@
 import React from "react";
-import { Caption } from "./Caption";
+import Caption from "./Caption";
 
 export default {
   title: "Example/Caption",
@@ -7,4 +7,10 @@ export default {
   parameters: { layout: "centered" },
 };
 
-export const caption = () => <Caption />;
+export const caption = () => (
+  <Caption>
+    Back
+    <br />
+    ground
+  </Caption>
+);
