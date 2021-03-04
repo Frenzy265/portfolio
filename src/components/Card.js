@@ -1,5 +1,6 @@
 import styled from "styled-components/macro";
 import { Arrows } from "./Arrows";
+import PropTypes from "prop-types";
 
 const CardContainer = styled.div`
   background: var(--secondary-color);
@@ -26,20 +27,21 @@ const TextContainer = styled.div`
   }
 `;
 
-export const Card = () => {
+export const Card = ({ title, period, description }) => {
   return (
     <CardContainer>
       <TextContainer>
-        <h2>
-          Trainee Web Development Neue Fisch - Pool and Tool for Digital Talents
-        </h2>
-        <h2>09/2020 - 12/2020</h2>
-        <p>
-          Intensiv-Coding-Bootcamp in Vollzeit 540 Stunden Programmierpraxis mit
-          Eigenentwicklung einer Web App als Abschlussprojekt
-        </p>
+        <h2>{title}</h2>
+        <h2>{period}</h2>
+        <p>{description}</p>
       </TextContainer>
       <Arrows />
     </CardContainer>
   );
+};
+
+Card.propTypes = {
+  title: PropTypes.string.isRequired,
+  period: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
 };
