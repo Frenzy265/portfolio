@@ -46,12 +46,12 @@ const Navigation = ({ open }) => {
     <>
       <nav>
         <Button>
-          <a href="#">Contact</a>
+          <a href="contact">Contact</a>
         </Button>
         <UnorderedList open={open}>
           {sections?.map((section) => (
             <NavItem key={section}>
-              <a href="#">{section}</a>
+              <a href={section}>{section}</a>
             </NavItem>
           ))}
         </UnorderedList>
