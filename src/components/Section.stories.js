@@ -4,6 +4,8 @@ import { SkillsList } from "./List";
 import Section from "./Section";
 import Emoji from "../assets/emoji.png";
 import { TextBox } from "./Textbox";
+import { Cards } from "./Cards";
+import { Caption } from "./Caption";
 
 export default {
   title: "Example/Section",
@@ -32,5 +34,12 @@ export const sectionProfile = () => (
       <img src={Emoji} alt="Profile" />
     </Circle>
     <TextBox />
+  </Section>
+);
+
+export const sectionBackground = () => (
+  <Section>
+    <Caption />
+    <Cards />
   </Section>
 );
