@@ -7,6 +7,7 @@ const CardContainer = styled.div`
   width: 300px;
   height: 400px;
   padding: 10px 20px;
+  margin: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -16,7 +17,7 @@ const TextContainer = styled.div`
   color: var(--primary-color);
 
   h2 {
-    font-weight: bold;
+    font-weight: 400;
     font-size: 1.2rem;
   }
 
