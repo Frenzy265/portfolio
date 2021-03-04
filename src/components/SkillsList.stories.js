@@ -1,5 +1,5 @@
 import React from "react";
-import { SkillsList } from "./List";
+import { SkillsList } from "./SkillsList";
 
 export default {
   title: "Example/SkillsList",
@@ -7,4 +7,4 @@ export default {
   parameters: { layout: "centered" },
 };
 
-export const skillslist = () => <SkillsList />;
+export const skillsList = () => <SkillsList />;
