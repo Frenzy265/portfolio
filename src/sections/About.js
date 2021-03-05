@@ -5,7 +5,7 @@ import Emoji from "../assets/emoji.png";
 
 const About = () => {
   return (
-    <Section>
+    <Section id="About">
       <Circle imgSrc={Emoji} />
       <TextBox />
     </Section>

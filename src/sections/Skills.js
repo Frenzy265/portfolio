@@ -4,7 +4,7 @@ import Circle from "../components/Circle";
 
 const Skills = () => {
   return (
-    <Section>
+    <Section id="Skills">
       <Circle title="skills" />
       <SkillsList />
     </Section>

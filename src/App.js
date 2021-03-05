@@ -9,11 +9,10 @@ function App() {
   return (
     <>
       <GlobalStyle />
-
       <Header />
-      <About id="about" />
-      <Background id="background" />
-      <Skills id="skills" />
+      <About />
+      <Background />
+      <Skills />
     </>
   );
 }

@@ -4,7 +4,7 @@ import Caption from "../components/Caption";
 
 const Background = () => {
   return (
-    <Section>
+    <Section id="Background">
       <Caption>
         Back
         <br />
