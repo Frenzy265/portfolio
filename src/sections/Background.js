@@ -1,5 +1,5 @@
 import Section from "../components/Section";
-import { Cards } from "../components/Cards";
+import { CardsBackground } from "../components/Cards";
 import Caption from "../components/Caption";
 
 const Background = () => {
@@ -10,7 +10,7 @@ const Background = () => {
         <br />
         ground
       </Caption>
-      <Cards />
+      <CardsBackground />
     </Section>
   );
 };
