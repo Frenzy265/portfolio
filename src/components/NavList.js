@@ -16,6 +16,7 @@ const Button = styled.button`
   border: none;
   position: absolute;
   outline: none;
+  cursor: pointer;
 
   a {
     text-decoration: none;
@@ -49,7 +50,7 @@ const Navigation = ({ open, toggle }) => {
       <nav>
         <Button>
           <Link
-            to="contact"
+            to="Contact"
             activeClass="active"
             spy={true}
             smooth={true}
