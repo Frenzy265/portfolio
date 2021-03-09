@@ -50,7 +50,7 @@ const Navigation = ({ open, toggle }) => {
       <nav>
         <Button>
           <Link
-            to="contact"
+            to="Contact"
             activeClass="active"
             spy={true}
             smooth={true}
