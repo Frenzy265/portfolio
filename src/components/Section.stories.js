@@ -4,7 +4,7 @@ import { SkillsList } from "./SkillsList";
 import Section from "./Section";
 import Emoji from "../assets/emoji.png";
 import { TextBox } from "./Textbox";
-import { Cards } from "./Cards";
+import { CardsBackground } from "./Cards";
 import Caption from "./Caption";
 
 export default {
@@ -44,6 +44,6 @@ export const sectionBackground = () => (
       <br />
       ground
     </Caption>
-    <Cards />
+    <CardsBackground />
   </Section>
 );
