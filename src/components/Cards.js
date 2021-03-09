@@ -8,6 +8,7 @@ const CardContainer = styled.div`
   grid-gap: 1rem;
   grid-auto-flow: column;
   overflow-x: auto;
+  align-self: flex-start;
 `;
 
 export const Cards = () => {

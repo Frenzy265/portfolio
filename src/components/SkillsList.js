@@ -4,6 +4,7 @@ const List = styled.ul`
   list-style-type: none;
   padding: 0;
   margin: 0;
+  justify-self: start;
 
   li {
     font-size: 2rem;
