@@ -1,9 +1,9 @@
-import { Cards } from "./Cards";
+import { CardsBackground } from "./Cards";
 
 export default {
-  title: "Example/Cards",
-  component: Cards,
+  title: "Example/CardsBackground",
+  component: CardsBackground,
   parameters: { layout: "centered" },
 };
 
-export const cards = () => <Cards />;
+export const cardsBackground = () => <CardsBackground />;
