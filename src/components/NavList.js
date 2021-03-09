@@ -43,7 +43,7 @@ const NavItem = styled(Button)`
 
 const sections = ["About", "Background", "Projects", "Skills"];
 
-const Navigation = ({ open }) => {
+const Navigation = ({ open, toggle }) => {
   return (
     <>
       <nav>
@@ -59,18 +59,17 @@ const Navigation = ({ open }) => {
           </Link>
         </Button>
         <UnorderedList open={open}>
-          {sections?.map((section) => (
-            <NavItem key={section}>
-              <Link
-                to={`${section}`}
-                activeClass="active"
-                spy={true}
-                smooth={true}
-                offset={-50}
-              >
-                {section}
-              </Link>
-            </NavItem>
+          {sections?.map((section, index) => (
+            <Link
+              key={index}
+              to={`${section}`}
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-50}
+            >
+              <NavItem onClick={toggle}>{section}</NavItem>
+            </Link>
           ))}
         </UnorderedList>
       </nav>
@@ -82,4 +81,5 @@ export default Navigation;
 
 Navigation.propTypes = {
   open: PropTypes.bool,
+  toggle: PropTypes.func,
 };

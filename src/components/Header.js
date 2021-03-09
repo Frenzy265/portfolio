@@ -36,7 +36,7 @@ export const Header = () => {
     <>
       <Head>
         <Navbar>
-          <NavList open={open}></NavList>
+          <NavList open={open} toggle={toggle} />
           <img src={BurgerMenue} alt="Burger Menue" onClick={toggle} />
         </Navbar>
       </Head>
