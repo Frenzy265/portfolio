@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./components/Footer";
 import { Header } from "./components/Header";
 import GlobalStyle from "./globalstyle";
 import About from "./sections/About";
@@ -15,6 +16,7 @@ function App() {
       <Background />
       <Skills />
       <Contact />
+      <Footer>Franziska Klaus 2021</Footer>
     </>
   );
 }
