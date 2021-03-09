@@ -7,6 +7,7 @@ const Container = styled.section`
   height: 100vh;
   width: 100vw;
   padding: 150px 50px 50px 100px;
+  grid-gap: 10px;
 `;
 
 export default Container;
