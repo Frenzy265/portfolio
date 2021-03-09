@@ -1,5 +1,6 @@
 import styled from "styled-components/macro";
 import PropTypes from "prop-types";
+import { Link } from "react-scroll";
 
 const Button = styled.button`
   width: 100px;
@@ -14,6 +15,7 @@ const Button = styled.button`
   margin-right: 10px;
   border: none;
   position: absolute;
+  outline: none;
 
   a {
     text-decoration: none;
@@ -41,18 +43,33 @@ const NavItem = styled(Button)`
 
 const sections = ["About", "Background", "Projects", "Skills"];
 
-const Navigation = ({ open }) => {
+const Navigation = ({ open, toggle }) => {
   return (
     <>
       <nav>
         <Button>
-          <a href="contact">Contact</a>
+          <Link
+            to="contact"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-50}
+          >
+            contact
+          </Link>
         </Button>
         <UnorderedList open={open}>
-          {sections?.map((section) => (
-            <NavItem key={section}>
-              <a href={section}>{section}</a>
-            </NavItem>
+          {sections?.map((section, index) => (
+            <Link
+              key={index}
+              to={`${section}`}
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-50}
+            >
+              <NavItem onClick={toggle}>{section}</NavItem>
+            </Link>
           ))}
         </UnorderedList>
       </nav>
@@ -64,4 +81,5 @@ export default Navigation;
 
 Navigation.propTypes = {
   open: PropTypes.bool,
+  toggle: PropTypes.func,
 };
