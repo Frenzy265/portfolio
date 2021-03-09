@@ -16,6 +16,7 @@ const Button = styled.button`
   border: none;
   position: absolute;
   outline: none;
+  cursor: pointer;
 
   a {
     text-decoration: none;
