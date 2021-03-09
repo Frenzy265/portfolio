@@ -6,7 +6,7 @@ const Container = styled.section`
   place-items: center;
   height: 100vh;
   width: 100vw;
-  padding: 100px 50px 0px 100px;
+  padding: 150px 50px 50px 100px;
 `;
 
 export default Container;
