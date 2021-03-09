@@ -1,10 +1,10 @@
 import React from "react";
-import Footer from "./components/Footer";
+import Footer from "./sections/Footer";
 import { Header } from "./components/Header";
 import GlobalStyle from "./globalstyle";
 import About from "./sections/About";
 import Background from "./sections/Background";
-import { Contact } from "./sections/Contact";
+import Projects from "./sections/Projects";
 import Skills from "./sections/Skills";
 
 function App() {
@@ -15,8 +15,8 @@ function App() {
       <About />
       <Background />
       <Skills />
-      <Contact />
-      <Footer>Franziska Klaus 2021</Footer>
+      <Projects />
+      <Footer />
     </>
   );
 }
