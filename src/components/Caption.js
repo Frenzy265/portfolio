@@ -6,6 +6,7 @@ const Caption = styled.h1`
   font-weight: 800;
   margin-block-end: 0px;
   margin-block-start: 0px;
+  align-self: start;
 `;
 
 export default Caption;
