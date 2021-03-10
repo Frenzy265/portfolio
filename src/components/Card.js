@@ -38,20 +38,13 @@ export const Card = ({ title, period, description }) => {
 
   return (
     <>
-      <ReactCardFlip
-        isFlipped={flip}
-        flipDirection="horizontal"
-        flipSpeedBackToFront="1"
-        flipSpeedBackToBack="1"
-        infinite="false"
-      >
+      <ReactCardFlip isFlipped={flip}>
         <CardContainer>
           <TextContainer>
             <h2>{title}</h2>
             <h2>{period}</h2>
             <p>{description}</p>
           </TextContainer>
-
           <Arrows onClick={handleFlipCard} />
         </CardContainer>
 
@@ -59,7 +52,6 @@ export const Card = ({ title, period, description }) => {
           <TextContainer>
             <h2>Backside</h2>
           </TextContainer>
-
           <Arrows onClick={handleFlipCard} />
         </CardContainer>
       </ReactCardFlip>
