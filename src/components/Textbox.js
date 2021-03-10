@@ -3,7 +3,7 @@ import Quote from "../assets/icon-metro-quote.svg";
 
 const Box = styled.div`
   color: var(--secondary-color);
-  width: 500px;
+  width: 550px;
 
   h2 {
     font-size: 1.2rem;
@@ -28,11 +28,16 @@ export const TextBox = () => {
         <img src={Quote} alt="quote" />
         <h2>Sei mutig, erlaube Fehler, lerne Neues!</h2>
         <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur.
+          Wir können nur über uns hinauswachsen und uns weiterentwickeln, wenn
+          wir Neues wagen und Neues lernen. Und das habe ich getan. Ich habe
+          mich im vergangenen Jahr entschieden, meinen Job als Projektmanagerin
+          für Corporate Events aufzugeben und einen ganz anderen Weg
+          einzuschlagen. Mein Drang nach Veränderung und mein Wunsch, den
+          digitalen Wandel mitzugestalten, hat mich zum Web Development geführt.
+          Dort habe ich drei Monate remote und in Vollzeit das notwendige
+          Handwerkszeug und die Arbeitsmethoden für meinen Einstieg als
+          Entwicklerin erlernt. Mit meinem Code möchte ich die Welt ein kleines
+          bisschen besser machen. Das ist meine Vision.
         </p>
         <img
           src={Quote}

@@ -3,11 +3,13 @@ import PropTypes from "prop-types";
 
 const Container = styled.button`
   align-self: flex-end;
+  justify-self: end;
   margin: 0 10px 10px 0;
   background: none;
   outline: none;
   border: none;
   cursor: pointer;
+
   svg {
     fill: var(--tertiary-color);
     height: 20px;
