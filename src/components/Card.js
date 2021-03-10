@@ -24,12 +24,29 @@ const TextContainer = styled.div`
     font-size: 1.2rem;
   }
 
-  p {
+  p,
+  a {
     font-weight: lighter;
+    text-decoration: none;
+    color: var(--primary-color);
   }
 `;
 
-export const Card = ({ title, period, description }) => {
+const imageContainer = styled.div`
+  width: 100%;
+  height: 90%;
+  color: red;
+`;
+
+export const Card = ({
+  title,
+  period,
+  description,
+  shortTitle,
+  website,
+  websiteName,
+  imgSrc,
+}) => {
   const [flip, setFlip] = useState(false);
 
   const handleFlipCard = () => {
@@ -44,14 +61,15 @@ export const Card = ({ title, period, description }) => {
             <h2>{title}</h2>
             <h2>{period}</h2>
             <p>{description}</p>
+            <a href={website}>{websiteName}</a>
           </TextContainer>
           <Arrows onClick={handleFlipCard} />
         </CardContainer>
 
         <CardContainer>
-          <TextContainer>
-            <h2>Backside</h2>
-          </TextContainer>
+          <imageContainer>
+            <img src={imgSrc} alt={shortTitle} />
+          </imageContainer>
           <Arrows onClick={handleFlipCard} />
         </CardContainer>
       </ReactCardFlip>
@@ -63,4 +81,8 @@ Card.propTypes = {
   title: PropTypes.string.isRequired,
   period: PropTypes.string,
   description: PropTypes.string.isRequired,
+  shortTitle: PropTypes.string.isRequired,
+  website: PropTypes.string,
+  websiteName: PropTypes.string,
+  imgSrc: PropTypes.any,
 };
