@@ -3,7 +3,7 @@ import Quote from "../assets/icon-metro-quote.svg";
 
 const Box = styled.div`
   color: var(--secondary-color);
-  width: 500px;
+  width: 550px;
 
   h2 {
     font-size: 1.2rem;
