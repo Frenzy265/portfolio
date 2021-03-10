@@ -1,6 +1,8 @@
 import styled from "styled-components/macro";
 import { Card } from "./Card";
 import Jhh from "../assets/logo-jhh.svg";
+import Svw from "../assets/SVW.png";
+import RecycleBar from "../assets/RecycleBar.png";
 
 const CardContainer = styled.div`
   padding: 30px 0px;
@@ -9,6 +11,7 @@ const CardContainer = styled.div`
   grid-gap: 1rem;
   grid-auto-flow: column;
   overflow-x: auto;
+  overflow-y: hidden;
   align-self: flex-start;
 `;
 
@@ -16,30 +19,28 @@ const backgroundDetails = [
   {
     title:
       "Trainee Web Development Neue Fische - Pool and Tool for Digital Talents",
-    period: "09/2020 - 12/2020",
+    subtitle: "09/2020 - 12/2020",
     description:
       "Intensiv-Coding-Bootcamp in Vollzeit 540 Stunden Programmierpraxis mit Eigenentwicklung einer Web App als Abschlussprojekt",
-    shortTitle: "neue Fische Bootcamp",
     website: "https://www.neuefische.de/",
     websiteName: "www.neuefische.de",
     imgSrc: "https://media.giphy.com/media/SqqLcBeVxlgsIAhzsB/giphy.gif",
   },
   {
     title: "Senior Projektmanagerin jaeger + haeckerhase gmbh",
-    period: "08/2012 - 08/2020",
+    subtitle: "08/2012 - 08/2020",
     description:
       "Konzeption, Panung und Umsetzung von Corporate Events, Steuerung und Führung interdisziplinärer Teams, Budgeterstellung, -kontrolle, und -abrechnung",
-    shortTitle: "jaeger + haeckerhase gmbh",
     website: "https://www.jaeger-haeckerhase.de/",
     websiteName: "www.jaeger-haeckerhase.de",
     imgSrc: Jhh,
   },
   {
     title: "Master of Arts",
-    period: "03/2010 - 07/2012",
+    subtitle: "03/2010 - 07/2012",
     description:
       "Betriebswirtschaft und Kultur-, Freizeit-, Sportmanagement an der Reihnhold-Würth Hochschule Künzelsau der Hochschule Heilbronn",
-    shortTitle: "Masterstudium",
+
     website: "https://www.hs-heilbronn.de/campus-kuenzelsau",
     websiteName: "www.hs-heilbronn.de",
     imgSrc:
@@ -47,10 +48,10 @@ const backgroundDetails = [
   },
   {
     title: "Bachelor of Arts",
-    period: "03/2006 - 09/2009",
+    subtitle: "03/2006 - 09/2009",
     description:
       "Betriebswirtschaft und Kultur-, Freizeit-, Sportmanagement an der Reihnhold-Würth Hochschule Künzelsau der Hochschule Heilbronn",
-    shortTitle: "Bachelorstudium",
+
     website: "https://www.hs-heilbronn.de/campus-kuenzelsau",
     websiteName: "www.hs-heilbronn.de",
     imgSrc:
@@ -61,21 +62,26 @@ const backgroundDetails = [
 const projectDetails = [
   {
     title: "RecycleBar",
+    subtitle: "Reduce, Reuse, Recycle",
     description:
       "Als Abschlussprojekt im Rahmen des Bootcamps war es die Aufgabe, eine eigene Web-App zu entwickeln. Die Idee, das Design und die vollständige Umsetzung aller Seiten und Funktionalitäten war mir dabei selbst überlassen. ",
-    shortTitle: "RecycleBar",
     website: "https://recycle-bar.herokuapp.com/",
-    webSiteName: "Deployment Recyclebar",
+    websiteName: "Deployment RecycleBar",
     imgSrc:
       "https://github.com/Frenzy265/recycle/raw/main/Franziska-Klaus_RecycleBar.gif",
   },
   {
     title: "SV Werder Bremen",
+    subtitle: "Das Weserstadion für dein Zuhause",
     description:
       "In Zeiten von Corona und Fußballschauen zu Hause auf der Couch fehlt es oft an der richtigen Fußballstimmung. Das soll sich mit der App ändern, indem sie ein bisschen Weser-Stadion ins eigene Wohnzimmer bringt.",
+    website: "https://svw.frenzy265.vercel.app/",
+    websiteName: "Deployment SVW",
+    imgSrc: Svw,
   },
   {
     title: "Portfolio",
+    subtitle: "Ein Selbstversuch",
     description:
       "Meine eigene Protfolio-Website dient dazu, gelerntes zu vertiefen und Schwerpunktmäßig neue Erfahrungen mit Animationen und Keyframes zu machen.",
   },
@@ -89,9 +95,8 @@ export const CardsBackground = () => {
           <Card
             key={index}
             title={backgroundDetail.title}
-            period={backgroundDetail.period}
+            subtitle={backgroundDetail.subtitle}
             description={backgroundDetail.description}
-            shortTitle={backgroundDetail.shortTitle}
             website={backgroundDetail.website}
             websiteName={backgroundDetail.websiteName}
             imgSrc={backgroundDetail.imgSrc}
@@ -108,10 +113,11 @@ export const CardsProjects = () => {
       <CardContainer>
         {projectDetails.map((projectDetail, index) => (
           <Card
+            cardTypeProjects={true}
             key={index}
             title={projectDetail.title}
+            subtitle={projectDetail.subtitle}
             description={projectDetail.description}
-            shortTitle={projectDetail.shortTitle}
             website={projectDetail.website}
             websiteName={projectDetail.websiteName}
             imgSrc={projectDetail.imgSrc}
