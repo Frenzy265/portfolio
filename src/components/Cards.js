@@ -46,6 +46,11 @@ const projectDetails = [
     description:
       "Als Abschlussprojekt im Rahmen des Bootcamps war es die Aufgabe, eine eigene Web-App zu entwickeln. Die Idee, das Design und die vollständige Umsetzung aller Seiten und Funktionalitäten war mir dabei selbst überlassen. ",
   },
+  {
+    title: "RecycleBar",
+    description:
+      "Als Abschlussprojekt im Rahmen des Bootcamps war es die Aufgabe, eine eigene Web-App zu entwickeln. Die Idee, das Design und die vollständige Umsetzung aller Seiten und Funktionalitäten war mir dabei selbst überlassen. ",
+  },
 ];
 
 export const CardsBackground = () => {
