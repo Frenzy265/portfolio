@@ -1,6 +1,8 @@
 import styled from "styled-components/macro";
 import { Arrows } from "./Arrows";
 import PropTypes from "prop-types";
+import React, { useState } from "react";
+import ReactCardFlip from "react-card-flip";
 
 const CardContainer = styled.div`
   background: var(--secondary-color);
@@ -28,20 +30,37 @@ const TextContainer = styled.div`
 `;
 
 export const Card = ({ title, period, description }) => {
+  const [flip, setFlip] = useState(false);
+
+  const handleFlipCard = () => {
+    setFlip(!flip);
+  };
+
   return (
-    <CardContainer>
-      <TextContainer>
-        <h2>{title}</h2>
-        <h2>{period}</h2>
-        <p>{description}</p>
-      </TextContainer>
-      <Arrows />
-    </CardContainer>
+    <>
+      <ReactCardFlip isFlipped={flip}>
+        <CardContainer>
+          <TextContainer>
+            <h2>{title}</h2>
+            <h2>{period}</h2>
+            <p>{description}</p>
+          </TextContainer>
+          <Arrows onClick={handleFlipCard} />
+        </CardContainer>
+
+        <CardContainer>
+          <TextContainer>
+            <h2>Backside</h2>
+          </TextContainer>
+          <Arrows onClick={handleFlipCard} />
+        </CardContainer>
+      </ReactCardFlip>
+    </>
   );
 };
 
 Card.propTypes = {
   title: PropTypes.string.isRequired,
-  period: PropTypes.string.isRequired,
+  period: PropTypes.string,
   description: PropTypes.string.isRequired,
 };
