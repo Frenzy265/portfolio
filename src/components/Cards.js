@@ -2,11 +2,10 @@ import styled from "styled-components/macro";
 import { Card } from "./Card";
 import Jhh from "../assets/logo-jhh.svg";
 import Svw from "../assets/SVW.png";
-import RecycleBar from "../assets/RecycleBar.png";
 
 const CardContainer = styled.div`
   padding: 30px 0px;
-  width: 50vw;
+  width: 100vh;
   display: grid;
   grid-gap: 1rem;
   grid-auto-flow: column;

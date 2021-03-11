@@ -2,7 +2,6 @@ import styled from "styled-components/macro";
 import ContactCards from "../components/ContactCards";
 
 const Container = styled.footer`
-  width: 100vw;
   height: 200px;
   background-color: var(--secondary-color);
   color: var(--primary-color);

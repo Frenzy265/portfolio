@@ -19,12 +19,6 @@ const GlobalStyle = createGlobalStyle`
     height: 100%
 }
 
-html {
-    width: 100%;
-    height: 100%;
- 
-}
-
 h1 {
     text-transform: lowercase;
     font-family: 'Domine', serif;
@@ -32,7 +26,6 @@ h1 {
 
 body {
     margin: 0;
-    width: 100%;
     background: var(--primary-color);
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;

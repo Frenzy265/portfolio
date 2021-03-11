@@ -4,10 +4,9 @@ const Section = styled.section`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   place-items: center;
-  height: 100vh;
-  width: 100vw;
-  padding: 50px;
-  grid-gap: 10px;
+  height: auto;
+  grid-gap: 20px;
+  margin: 100px 30px 200px;
 `;
 
 export default Section;
