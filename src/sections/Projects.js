@@ -5,7 +5,7 @@ import Section from "../components/Section";
 const Projects = () => {
   return (
     <>
-      <Section id="Projects">
+      <Section id="projects">
         <Caption>
           pro
           <br />

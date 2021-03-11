@@ -22,7 +22,7 @@ const Container = styled.footer`
 const Footer = () => {
   return (
     <>
-      <Container id="Contact">
+      <Container id="contact">
         <p>Get in touch with me</p>
         <ContactCards />
       </Container>
