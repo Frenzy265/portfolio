@@ -3,11 +3,11 @@ import PropTypes from "prop-types";
 import { Link } from "react-scroll";
 
 const Button = styled.button`
-  width: 100px;
-  height: 25px;
+  width: 150px;
+  height: 35px;
   background: var(--secondary-color);
   color: var(--primary-color);
-  font-size: small;
+  font-size: 1rem;
   text-align: center;
   line-height: 25px;
   border-radius: 25px;
@@ -33,7 +33,7 @@ const UnorderedList = styled.ul`
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 30px;
+  top: 40px;
 `;
 
 const NavItem = styled(Button)`
@@ -43,7 +43,7 @@ const NavItem = styled(Button)`
 
 const sections = ["About", "Background", "Projects", "Skills"];
 
-const Navigation = ({ open, toggle }) => {
+const NavBar = ({ open, toggle }) => {
   return (
     <>
       <nav>
@@ -77,9 +77,9 @@ const Navigation = ({ open, toggle }) => {
   );
 };
 
-export default Navigation;
+export default NavBar;
 
-Navigation.propTypes = {
+NavBar.propTypes = {
   open: PropTypes.bool,
   toggle: PropTypes.func,
 };
