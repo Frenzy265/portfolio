@@ -41,7 +41,7 @@ const NavItem = styled(Button)`
   position: relative;
 `;
 
-const sections = ["About", "Background", "Projects", "Skills"];
+const sections = ["about", "carrer", "projects", "skills"];
 
 const NavBar = ({ open, toggle }) => {
   return (
@@ -49,7 +49,7 @@ const NavBar = ({ open, toggle }) => {
       <nav>
         <Button>
           <Link
-            to="Contact"
+            to="contact"
             activeClass="active"
             spy={true}
             smooth={true}
