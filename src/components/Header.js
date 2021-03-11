@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import NavList from "./NavList";
+import NavBar from "./NavBar";
 import { useState } from "react";
 import * as IoIcon from "react-icons/io5";
 
@@ -15,13 +15,13 @@ const Head = styled.header`
   padding: 20px;
 `;
 
-const Navbar = styled.div`
+const NavContainer = styled.div`
   display: flex;
   justify-content: center;
 
   svg {
     align-self: start;
-    font-size: 2.2rem;
+    font-size: 3rem;
     cursor: pointer;
   }
 `;
@@ -36,14 +36,14 @@ export const Header = () => {
   return (
     <>
       <Head>
-        <Navbar>
-          <NavList open={open} toggle={toggle} />
+        <NavContainer>
+          <NavBar open={open} toggle={toggle} />
           {open ? (
             <IoIcon.IoClose onClick={toggle} />
           ) : (
             <IoIcon.IoMenu onClick={toggle} />
           )}
-        </Navbar>
+        </NavContainer>
       </Head>
     </>
   );
