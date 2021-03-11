@@ -1,7 +1,7 @@
 import styled from "styled-components/macro";
 import NavList from "./NavList";
-import BurgerMenue from "../assets/burger-menue.svg";
 import { useState } from "react";
+import * as IoIcon from "react-icons/io5";
 
 const Head = styled.header`
   width: 100%;
@@ -19,8 +19,9 @@ const Navbar = styled.div`
   display: flex;
   justify-content: center;
 
-  img {
-    height: 25px;
+  svg {
+    align-self: start;
+    font-size: 2.2rem;
     cursor: pointer;
   }
 `;
@@ -37,7 +38,11 @@ export const Header = () => {
       <Head>
         <Navbar>
           <NavList open={open} toggle={toggle} />
-          <img src={BurgerMenue} alt="Burger Menue" onClick={toggle} />
+          {open ? (
+            <IoIcon.IoClose onClick={toggle} />
+          ) : (
+            <IoIcon.IoMenu onClick={toggle} />
+          )}
         </Navbar>
       </Head>
     </>
