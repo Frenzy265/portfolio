@@ -1,13 +1,13 @@
 import styled from "styled-components/macro";
 
-const Container = styled.section`
+const Section = styled.section`
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: repeat(2, 1fr);
   place-items: center;
   height: 100vh;
   width: 100vw;
-  padding: 150px 50px 50px 100px;
+  padding: 50px;
   grid-gap: 10px;
 `;
 
-export default Container;
+export default Section;
