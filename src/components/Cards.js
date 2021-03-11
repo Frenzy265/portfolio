@@ -86,7 +86,7 @@ const projectDetails = [
   },
 ];
 
-export const CardsBackground = () => {
+export const CardsCarrer = () => {
   return (
     <>
       <CardContainer>
