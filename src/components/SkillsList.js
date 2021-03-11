@@ -6,9 +6,23 @@ const List = styled.ul`
   margin: 0;
   justify-self: start;
 
+  @media (max-width: 500px) {
+    justify-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   li {
     font-size: 2rem;
     font-weight: 300;
+
+    @media (max-width: 500px) {
+      min-width: 120px;
+      height: 50px;
+      margin: 5px;
+      padding: 5px;
+    }
   }
 `;
 
@@ -18,10 +32,10 @@ export const SkillsList = () => {
     "CSS",
     "React",
     "Styled-Components",
-    "Git Workflow",
+    "GitWorkflow",
     "Node.js",
     "Express.js",
-    "Mongo DB",
+    "MongoDB",
     "Scrum",
     "Projektmanagment",
   ];
