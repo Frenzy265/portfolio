@@ -5,9 +5,8 @@ import * as FaIcon from "react-icons/fa";
 
 const Container = styled.div`
   display: grid;
-  grid-template-rows: repeat(3fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 10px;
-  grid-auto-flow: column;
 `;
 
 const ContactDetails = [
