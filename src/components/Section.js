@@ -7,6 +7,11 @@ const Section = styled.section`
   height: auto;
   grid-gap: 20px;
   margin: 100px 30px 200px;
+
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto 1fr);
+  }
 `;
 
 export default Section;

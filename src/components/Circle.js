@@ -11,18 +11,26 @@ const Container = styled.div`
   align-items: center;
   flex-direction: column;
 
+  @media (max-width: 500px) {
+    width: 200px;
+    height: 200px;
+  }
+
   h1 {
     color: var(--secondary-color);
-    font-size: 10rem;
     margin: 30px;
   }
 
   svg {
     width: 70px;
+
+    @media (max-width: 500px) {
+      width: 0;
+    }
   }
 
   img {
-    width: 500px;
+    width: inherit;
   }
 `;
 
