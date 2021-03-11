@@ -6,7 +6,11 @@ const Projects = () => {
   return (
     <>
       <Section id="Projects">
-        <Caption>projects</Caption>
+        <Caption>
+          pro
+          <br />
+          jects
+        </Caption>
         <CardsProjects />
       </Section>
     </>
