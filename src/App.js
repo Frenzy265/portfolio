@@ -7,21 +7,26 @@ import Background from "./sections/Background";
 import Projects from "./sections/Projects";
 import Skills from "./sections/Skills";
 import { Wrapper } from "./components/Wrapper";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <Wrapper>
-        <Header />
-        <main>
-          <About />
-          <Background />
-          <Skills />
-          <Projects />
-        </main>
-        <Footer />
-      </Wrapper>
+      <Router>
+        <Switch>
+          <Wrapper>
+            <Header />
+            <main>
+              <Route path="/about" component={About} />
+              <Route path="/background" component={Background} />
+              <Route path="/skills" component={Skills} />
+              <Route path="/projects" component={Projects} />
+            </main>
+            <Route path="/contact" component={Footer} />
+          </Wrapper>
+        </Switch>
+      </Router>
     </>
   );
 }
