@@ -1,6 +1,6 @@
 import styled from "styled-components/macro";
 import PropTypes from "prop-types";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const Button = styled.button`
   width: 100px;
@@ -41,7 +41,7 @@ const NavItem = styled(Button)`
   position: relative;
 `;
 
-const sections = ["About", "Background", "Projects", "Skills"];
+const sections = ["about", "background", "projects", "skills"];
 
 const Navigation = ({ open, toggle }) => {
   return (
@@ -49,7 +49,7 @@ const Navigation = ({ open, toggle }) => {
       <nav>
         <Button>
           <Link
-            to="Contact"
+            to="/contact"
             activeClass="active"
             spy={true}
             smooth={true}
@@ -62,7 +62,7 @@ const Navigation = ({ open, toggle }) => {
           {sections?.map((section, index) => (
             <Link
               key={index}
-              to={`${section}`}
+              to={`/${section}`}
               activeClass="active"
               spy={true}
               smooth={true}
