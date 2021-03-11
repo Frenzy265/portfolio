@@ -10,7 +10,6 @@ const ContactCard = styled.div`
   background: var(--secondary-color);
   color: var(--primary-color);
   font-size: 2rem;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.16);
   cursor: pointer;
   grid-auto-flow: column;
 
