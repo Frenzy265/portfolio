@@ -73,12 +73,24 @@ export const Card = ({
           <h2>{title}</h2>
           <p>{subtitle}</p>
           <p>{description}</p>
-          {cardTypeProjects ? <a href={website}>{websiteName}</a> : ""}
+          {cardTypeProjects ? (
+            <a href={website} rel="noreferrer" target="_blank">
+              {websiteName}{" "}
+            </a>
+          ) : (
+            ""
+          )}
           <Arrows onClick={handleFlipCard} />
         </TextContainer>
 
         <ImageContainer cardTypeProjects={cardTypeProjects}>
-          {cardTypeProjects ? "" : <a href={website}>{websiteName}</a>}
+          {cardTypeProjects ? (
+            ""
+          ) : (
+            <a href={website} rel="noreferrer" target="_blank">
+              {websiteName}
+            </a>
+          )}
           <img src={imgSrc} alt={title} />
           <Arrows onClick={handleFlipCard} />
         </ImageContainer>

@@ -36,7 +36,7 @@ const ContactCards = () => {
   return (
     <Container>
       {ContactDetails.map((detail, index) => (
-        <a key={index} href={detail.link}>
+        <a key={index} href={detail.link} rel="noreferrer" target="_blank">
           <ContactCard hoverColor={detail.color}>{detail.icon}</ContactCard>
         </a>
       ))}
