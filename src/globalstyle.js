@@ -16,7 +16,8 @@ const GlobalStyle = createGlobalStyle`
 }
 
 #root {
-    height: 100%
+    height: 100vh;
+    width: 100vw;
 }
 
 h1 {
