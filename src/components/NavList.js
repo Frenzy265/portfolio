@@ -11,8 +11,7 @@ const Button = styled.button`
   text-align: center;
   line-height: 25px;
   border-radius: 25px;
-  margin-bottom: 5px;
-  margin-right: 10px;
+  margin: 5px 10px 0px 0px;
   border: none;
   position: absolute;
   outline: none;
