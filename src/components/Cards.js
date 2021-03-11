@@ -82,7 +82,7 @@ const projectDetails = [
     title: "Portfolio",
     subtitle: "Ein Selbstversuch",
     description:
-      "Meine eigene Protfolio-Website dient dazu, gelerntes zu vertiefen und Schwerpunktmäßig neue Erfahrungen mit Animationen und Keyframes zu machen.",
+      "Meine eigene Protfolio-Website dient dazu, gelerntes zu vertiefen und neue Erfahrungen zu machen.",
   },
 ];
 
