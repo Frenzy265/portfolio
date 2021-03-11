@@ -7,13 +7,16 @@ const Container = styled.footer`
   background-color: var(--secondary-color);
   color: var(--primary-color);
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-rows: 40% 60%;
   place-items: center;
+  padding: 20px;
 
   p {
     color: var(--primary-color);
     font-size: 1rem;
     margin: 0px;
+    justify-self: center;
+    align-self: center;
   }
 `;
 
@@ -21,12 +24,7 @@ const Footer = () => {
   return (
     <>
       <Container id="Contact">
-        <div>
-          <p>
-            <strong>Get in touch with me</strong>
-          </p>
-          <p>Franziska Klaus</p>
-        </div>
+        <p>Get in touch with me</p>
         <ContactCards />
       </Container>
     </>
