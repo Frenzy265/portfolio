@@ -6,7 +6,7 @@ const List = styled.ul`
   margin: 0;
   justify-self: start;
 
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     justify-self: center;
     display: flex;
     flex-wrap: wrap;
@@ -17,7 +17,7 @@ const List = styled.ul`
     font-size: 2rem;
     font-weight: 300;
 
-    @media (max-width: 500px) {
+    @media (max-width: 768px) {
       min-width: 120px;
       height: 50px;
       margin: 5px;

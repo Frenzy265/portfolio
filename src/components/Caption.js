@@ -8,7 +8,7 @@ const Caption = styled.h1`
   align-self: start;
   line-height: 80%;
 
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     justify-self: start;
   }
 `;

@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "./sections/Footer";
-import { Header } from "./components/Header";
+import Header from "./components/Header/index";
 import GlobalStyle from "./globalstyle";
 import About from "./sections/About";
 import Carrer from "./sections/Carrer";

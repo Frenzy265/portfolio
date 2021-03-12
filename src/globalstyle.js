@@ -20,6 +20,8 @@ const GlobalStyle = createGlobalStyle`
     width: 100vw;
 }
 
+
+
 h1 {
     text-transform: lowercase;
     font-family: 'Domine', serif;
