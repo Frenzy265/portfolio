@@ -23,7 +23,7 @@ const Footer = () => {
   return (
     <>
       <Container id="contact">
-        <p>Get in touch with me</p>
+        <p>Get in touch with Franziska</p>
         <ContactCards />
       </Container>
     </>
