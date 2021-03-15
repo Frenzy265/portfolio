@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
     "main"
     "footer";
 
-  header {
+  nav {
     grid-area: header;
   }
 

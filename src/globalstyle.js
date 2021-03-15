@@ -20,14 +20,14 @@ const GlobalStyle = createGlobalStyle`
     width: 100vw;
 }
 
+
+
 h1 {
     text-transform: lowercase;
     font-family: 'Domine', serif;
     font-size: 9rem;
 
-    @media (max-width: 500px) {
-      font-size: 4rem;
-    }
+
 }
 
 body {

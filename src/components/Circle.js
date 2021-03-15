@@ -11,7 +11,7 @@ const Container = styled.div`
   align-items: center;
   flex-direction: column;
 
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     width: 200px;
     height: 200px;
   }
@@ -24,7 +24,7 @@ const Container = styled.div`
   svg {
     width: 70px;
 
-    @media (max-width: 500px) {
+    @media (max-width: 768px) {
       width: 0;
     }
   }

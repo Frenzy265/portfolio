@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "./sections/Footer";
-import { Header } from "./components/Header";
+import Navigation from "./components/Navigation/Navigation";
 import GlobalStyle from "./globalstyle";
 import About from "./sections/About";
 import Carrer from "./sections/Carrer";
@@ -13,7 +13,7 @@ function App() {
     <>
       <GlobalStyle />
       <Wrapper>
-        <Header />
+        <Navigation />
         <main>
           <About />
           <Carrer />

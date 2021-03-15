@@ -2,7 +2,7 @@ import styled from "styled-components/macro";
 import ContactCards from "../components/ContactCards";
 
 const Container = styled.footer`
-  height: 200px;
+  height: 300px;
   background-color: var(--secondary-color);
   color: var(--primary-color);
   display: grid;
@@ -15,7 +15,7 @@ const Container = styled.footer`
     font-size: 1rem;
     margin: 0px;
     justify-self: center;
-    align-self: center;
+    align-self: flex-end;
   }
 `;
 
@@ -23,7 +23,7 @@ const Footer = () => {
   return (
     <>
       <Container id="contact">
-        <p>Get in touch with me</p>
+        <p>Get in touch with Franziska</p>
         <ContactCards />
       </Container>
     </>

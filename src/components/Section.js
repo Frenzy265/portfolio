@@ -6,9 +6,9 @@ const Section = styled.section`
   place-items: center;
   height: auto;
   grid-gap: 20px;
-  margin: 100px 30px 200px;
+  margin: 150px 30px;
 
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(auto 1fr);
   }
