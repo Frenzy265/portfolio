@@ -1,34 +1,28 @@
 import styled from "styled-components/macro";
-import PropTypes from "prop-types";
+import { Link } from "react-scroll";
 
 export const Nav = styled.nav`
-  background: var(--secondary-color);
-  color: var(--primary-color);
-  height: 80px;
+  background: var(--primary-color);
+  height: 100px;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 2;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 `;
 
 export const NavbarContainer = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   height: inherit;
-  width: inherit;
+  width: 50%;
   z-index: 1;
-  padding: 0 50px;
+
   position: relative;
   margin: 0px;
   align-items: center;
-`;
-
-export const Logo = styled.p`
-  color: var(--primary-color);
-  font-size: 1rem;
 `;
 
 export const NavMenu = styled.ul`
@@ -38,33 +32,39 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  width: 120px;
+  width: 100px;
   height: 30px;
   background: var(--secondary-color);
   color: var(--primary-color);
   font-size: 1rem;
   border-radius: 25px;
-  margin: 5px 10px 0px 0px;
   border: none;
   outline: none;
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const NavLink = styled(Link)`
   cursor: pointer;
-  display: none;
+  text-decoration: none;
+  display: inline;
+
+  &.active {
+    color: var(--tertiary-color);
+  }
 
   :last-child {
     display: inline;
   }
 
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-
   :hover {
     color: var(--tertiary-color);
-  }
-
-  @media (max-width: 768px) {
-    display: none;
   }
 `;
 
@@ -77,11 +77,7 @@ export const BurgerMenu = styled.div`
     top: 0;
     right: 0;
     transform: translate(-60%, 50%);
-    font-size: 2rem;
+    font-size: 3rem;
     cursor: pointer;
   }
 `;
-
-NavItem.propTypes = {
-  open: PropTypes.bool,
-};
