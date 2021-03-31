@@ -8,7 +8,7 @@ const Carrer = () => {
       <Caption>
         Car
         <br />
-        rer
+        eer
       </Caption>
       <CardsCarrer />
     </Section>

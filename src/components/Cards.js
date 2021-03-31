@@ -20,7 +20,7 @@ const backgroundDetails = [
       "Trainee Web Development Neue Fische - Pool and Tool for Digital Talents",
     subtitle: "09/2020 - 12/2020",
     description:
-      "Intensiv-Coding-Bootcamp in Vollzeit 540 Stunden Programmierpraxis mit Eigenentwicklung einer Web App als Abschlussprojekt",
+      "Intensiv-Coding-Bootcamp in Vollzeit: 540 Stunden Programmierpraxis mit Eigenentwicklung einer Web App als Abschlussprojekt",
     website: "https://www.neuefische.de/",
     websiteName: "www.neuefische.de",
     imgSrc: "https://media.giphy.com/media/SqqLcBeVxlgsIAhzsB/giphy.gif",
@@ -29,7 +29,7 @@ const backgroundDetails = [
     title: "Senior Projektmanagerin jaeger + haeckerhase gmbh",
     subtitle: "08/2012 - 08/2020",
     description:
-      "Konzeption, Panung und Umsetzung von Corporate Events, Steuerung und Führung interdisziplinärer Teams, Budgeterstellung, -kontrolle, und -abrechnung",
+      "Konzeption, Planung und Umsetzung von Corporate Events, Steuerung und Führung interdisziplinärer Teams, Budgeterstellung, -kontrolle, und Abrechnung",
     website: "https://www.jaeger-haeckerhase.de/",
     websiteName: "www.jaeger-haeckerhase.de",
     imgSrc: Jhh,
@@ -38,7 +38,7 @@ const backgroundDetails = [
     title: "Master of Arts",
     subtitle: "03/2010 - 07/2012",
     description:
-      "Betriebswirtschaft und Kultur-, Freizeit-, Sportmanagement an der Reihnhold-Würth Hochschule Künzelsau der Hochschule Heilbronn",
+      "Betriebswirtschaft und Kultur-, Freizeit-, Sportmanagement an der Reinhold-Würth Hochschule Künzelsau der Hochschule Heilbronn",
 
     website: "https://www.hs-heilbronn.de/campus-kuenzelsau",
     websiteName: "www.hs-heilbronn.de",
@@ -49,7 +49,7 @@ const backgroundDetails = [
     title: "Bachelor of Arts",
     subtitle: "03/2006 - 09/2009",
     description:
-      "Betriebswirtschaft und Kultur-, Freizeit-, Sportmanagement an der Reihnhold-Würth Hochschule Künzelsau der Hochschule Heilbronn",
+      "Betriebswirtschaft und Kultur-, Freizeit-, Sportmanagement an der Reinhold-Würth Hochschule Künzelsau der Hochschule Heilbronn",
 
     website: "https://www.hs-heilbronn.de/campus-kuenzelsau",
     websiteName: "www.hs-heilbronn.de",
@@ -73,16 +73,10 @@ const projectDetails = [
     title: "SV Werder Bremen",
     subtitle: "Das Weserstadion für dein Zuhause",
     description:
-      "In Zeiten von Corona und Fußballschauen zu Hause auf der Couch fehlt es oft an der richtigen Fußballstimmung. Das soll sich mit der App ändern, indem sie ein bisschen Weser-Stadion ins eigene Wohnzimmer bringt.",
+      "In Zeiten von Corona und Fußballschauen zu Hause auf der Couch fehlt es oft an der richtigen Fußballstimmung. Das soll sich mit der App ändern, indem sie ein bisschen Weserstadion ins eigene Wohnzimmer bringt.",
     website: "https://svw.frenzy265.vercel.app/",
     websiteName: "Deployment SVW",
     imgSrc: Svw,
-  },
-  {
-    title: "Portfolio",
-    subtitle: "Ein Selbstversuch",
-    description:
-      "Meine eigene Protfolio-Website dient dazu, gelerntes zu vertiefen und neue Erfahrungen zu machen.",
   },
 ];
 
