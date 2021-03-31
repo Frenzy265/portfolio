@@ -31,6 +31,7 @@ const Container = styled.div`
 
   img {
     width: inherit;
+    border-radius: 50%;
   }
 `;
 
