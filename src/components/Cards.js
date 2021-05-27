@@ -12,6 +12,21 @@ const CardContainer = styled.div`
   overflow-x: auto;
   overflow-y: hidden;
   align-self: flex-start;
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #f5f5f5;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 1em;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--tertiary-color);
+    border-radius: 10px;
+  }
 `;
 
 const backgroundDetails = [
