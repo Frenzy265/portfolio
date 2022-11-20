@@ -16,6 +16,16 @@ const CardContainer = styled.div`
 
 const backgroundDetails = [
   {
+    title: "Software Engineer",
+    subtitle: "Seit 05/2021",
+    description:
+      "Intensiv-Coding-Bootcamp in Vollzeit: 540 Stunden Programmierpraxis mit Eigenentwicklung einer Web App als Abschlussprojekt",
+    website: "https://fulfillmenttools.com/",
+    websiteName: "www.fulfillmenttools.com",
+    imgSrc:
+      "https://fulfillmenttools.com/wp-content/uploads/2020/07/FT_Logo_2022_RZ_RGB_pos-trim.png",
+  },
+  {
     title: "Software Engineer fulfillmenttools",
     subtitle: "Seit 05/2021",
     description:
