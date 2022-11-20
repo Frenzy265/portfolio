@@ -16,6 +16,16 @@ const CardContainer = styled.div`
 
 const backgroundDetails = [
   {
+    title: "Software Engineer fulfillmenttools",
+    subtitle: "Seit 05/2021",
+    description:
+      "Intensiv-Coding-Bootcamp in Vollzeit: 540 Stunden Programmierpraxis mit Eigenentwicklung einer Web App als Abschlussprojekt",
+    website: "https://fulfillmenttools.com/",
+    websiteName: "www.fulfillmenttools.com",
+    imgSrc:
+      "https://fulfillmenttools.com/wp-content/uploads/2020/07/FT_Logo_2022_RZ_RGB_pos-trim.png",
+  },
+  {
     title:
       "Trainee Web Development Neue Fische - Pool and Tool for Digital Talents",
     subtitle: "09/2020 - 12/2020",
@@ -23,7 +33,7 @@ const backgroundDetails = [
       "Intensiv-Coding-Bootcamp in Vollzeit: 540 Stunden Programmierpraxis mit Eigenentwicklung einer Web App als Abschlussprojekt",
     website: "https://www.neuefische.de/",
     websiteName: "www.neuefische.de",
-    imgSrc: "https://media.giphy.com/media/SqqLcBeVxlgsIAhzsB/giphy.gif",
+    imgSrc: "https://media.giphy.com/media/KZqFcmN3p7d3YZuKfE/giphy.gif",
   },
   {
     title: "Senior Projektmanagerin jaeger + haeckerhase gmbh",
@@ -64,7 +74,7 @@ const projectDetails = [
     subtitle: "Reduce, Reuse, Recycle",
     description:
       "Als Abschlussprojekt im Rahmen des Bootcamps war es die Aufgabe, eine eigene Web-App zu entwickeln. Die Idee, das Design und die vollständige Umsetzung aller Seiten und Funktionalitäten war mir dabei selbst überlassen. ",
-    website: "https://recycle-bar.herokuapp.com/",
+    website: "https://recycle-7pq8.onrender.com",
     websiteName: "Deployment RecycleBar",
     imgSrc:
       "https://github.com/Frenzy265/recycle/raw/main/Franziska-Klaus_RecycleBar.gif",
@@ -74,7 +84,7 @@ const projectDetails = [
     subtitle: "Das Weserstadion für dein Zuhause",
     description:
       "In Zeiten von Corona und Fußballschauen zu Hause auf der Couch fehlt es oft an der richtigen Fußballstimmung. Das soll sich mit der App ändern, indem sie ein bisschen Weserstadion ins eigene Wohnzimmer bringt.",
-    website: "https://svw.frenzy265.vercel.app/",
+    website: "https://svw.onrender.com",
     websiteName: "Deployment SVW",
     imgSrc: Svw,
   },
