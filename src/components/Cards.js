@@ -84,7 +84,7 @@ const projectDetails = [
     subtitle: "Das Weserstadion für dein Zuhause",
     description:
       "In Zeiten von Corona und Fußballschauen zu Hause auf der Couch fehlt es oft an der richtigen Fußballstimmung. Das soll sich mit der App ändern, indem sie ein bisschen Weserstadion ins eigene Wohnzimmer bringt.",
-    website: "https://svw.onrender.com",
+    website: "svw.vercel.app",
     websiteName: "Deployment SVW",
     imgSrc: Svw,
   },
